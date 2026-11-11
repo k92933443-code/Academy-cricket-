@@ -130,7 +130,7 @@ const Footer=()=>h`<footer class="bg-[#050c16] px-5 pt-12 pb-24"><div class="max
 <div><h4 class="font-bold text-white mb-2">Contact</h4><p>Street, City, State</p><p>+91 99999 99999</p><p>info@youracademy.example</p><p class="mt-2 flex gap-3"><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></p><a href="#admin" class="inline-block mt-3 text-gold">Admin Login</a></div></div>
 <p class="text-center text-xs text-white/40 mt-10">© 2026 ${NAME}. All rights reserved.</p></footer>`;
 
-const WaFloat=()=>h`<a href=${"https://wa.me/"+WA+"?text="+encodeURIComponent("Hello, I want to know about cricket coaching.")} target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="fixed right-4 z-50 w-14 h-14 rounded-full bg-[#25D366] grid place-items-center text-2xl shadow-xl hover:scale-110 transition" style=${{bottom:"calc(16px + env(safe-area-inset-bottom,0px))"}}>💬</a>`;
+const WaFloat=()=>h`<a href=${"https://wa.me/"+WA+"?text="+encodeURIComponent("Hello, I want to know about cricket coaching.")} target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="fixed left-4 z-50 w-14 h-14 rounded-full bg-[#25D366] grid place-items-center text-2xl shadow-xl hover:scale-110 transition" style=${{bottom:"calc(16px + env(safe-area-inset-bottom,0px))"}}>💬</a>`;
 
 function Admin(){
 const[tab,setTab]=useState("Dashboard"),[tok,setTok]=useState(""),[em,setEm]=useState(""),[pw,setPw]=useState(""),[ae,setAe]=useState(""),[D,setD]=useState({enq:[],stu:[],con:[],gal:[],pro:[]}),[sf,setSf]=useState({name:"",program:"",batch:"",mobile:""}),[gf,setGf]=useState({category:"Training",image_url:""});
